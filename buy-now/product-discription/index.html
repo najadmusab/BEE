@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KONGO HONEY – Product Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="brand">
+    <span class="brand-mark">K</span>
+    <span class="brand-name">KONGO HONEY</span>
+  </div>
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/buy-now/index.html">Products</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+  </ul>
+</nav>
+
+<!-- PRODUCT DETAILS -->
+<section class="product-details">
+
+  <!-- IMAGE GALLERY -->
+  <div class="image-gallery">
+    <img id="mainImg" class="main-img">
+    <div class="thumbs">
+      <img id="thumb1" onclick="changeImg(this.src)">
+      <img id="thumb2" onclick="changeImg(this.src)">
+    </div>
+  </div>
+
+  <!-- DETAILS -->
+  <div class="details">
+    <span class="tag" id="tag"></span>
+    <h1 id="title"></h1>
+    <p class="price" id="price"></p>
+
+    <!-- QUANTITY -->
+    <div class="quantity">
+      <button onclick="changeQty(-1)">−</button>
+      <input type="text" id="qty" value="1" readonly>
+      <button onclick="changeQty(1)">+</button>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <button class="buy" onclick="buyNow()">Buy Now</button>
+      <a href="tel:+919526226011" class="call">Call Now</a>
+    </div>
+
+    <p class="desc" id="description"></p>
+  </div>
+
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div id="reviewList"></div>
+
+  <!-- ADD REVIEW -->
+  <div class="add-review">
+    <h3>Add Your Review</h3>
+    <input type="text" id="reviewName" placeholder="Your Name">
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <button onclick="addReview()">Submit Review</button>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2025 KONGO HONEY. ALL RIGHTS RESERVED.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

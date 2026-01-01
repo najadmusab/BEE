@@ -1,0 +1,51 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+body { background: #fffdf7; color:#2c2b14; }
+
+/* Navbar same style as main page */
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:18px 60px; background:#000; }
+.navbar ul { display:flex; gap:28px; list-style:none; }
+.navbar ul li a { color:#e4c883; text-decoration:none; font-weight:500; transition:0.3s; }
+.navbar ul li a:hover { color:#ffb703; }
+.brand { display:flex; align-items:center; gap:10px; }
+.brand-mark { font-size:2rem; font-weight:800; color:#f5c542; }
+.brand-name { letter-spacing:3px; font-size:1.1rem; color:white; }
+
+/* Hero Section */
+.hero-buy { text-align:center; padding:80px 20px; background: radial-gradient(circle at top, #1a1a1a, #000); color:white; }
+.hero-buy h1 { font-size:3rem; margin-bottom:10px; }
+.hero-buy p { max-width:600px; margin:0 auto; color:#ccc; }
+
+/* Products Grid */
+.products { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:30px; padding:50px; }
+.product-card { background:#fff3e0; border-radius:20px; padding:20px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+.product-card:hover { transform: translateY(-10px); box-shadow:0 15px 30px rgba(0,0,0,0.2); }
+.product-card img { width:100%; border-radius:15px; transition: transform 0.3s; }
+.product-card img:hover { transform: scale(1.05); }
+.product-card h2 { margin:15px 0 10px; color:#bf360c; }
+.product-card p { color:#5d4037; margin-bottom:10px; }
+.product-card .price { font-weight:700; font-size:1.2rem; margin-bottom:10px; }
+.quantity { margin-bottom:10px; }
+.quantity input { width:60px; padding:5px; border-radius:5px; border:1px solid #ccc; }
+
+/* Buttons */
+.buttons { display:flex; gap:10px; }
+.btn { text-decoration:none; padding:8px 20px; border-radius:30px; font-weight:600; transition:0.3s; }
+.buy-now { background:#ffb703; color:#000; }
+.buy-now:hover { background:#f57c00; color:#fff; }
+.call-now { background:#000; color:#fff; }
+.call-now:hover { background:#333; }
+
+/* Socials */
+.socials { text-align:center; margin-top:30px; display:flex; justify-content:center; gap:15px; }
+.social { text-decoration:none; padding:8px 20px; border-radius:50px; color:#fff; font-weight:600; transition:0.3s; }
+.whatsapp { background:#25D366; }
+.insta { background:#C13584; }
+
+/* Footer */
+.footer { text-align:center; padding:40px 20px; background:#000; color:#aaa; }
+
+/* Responsive */
+@media (max-width:768px){
+  .products { grid-template-columns: 1fr; padding:30px; }
+  .hero-buy h1 { font-size:2.2rem; }
+}

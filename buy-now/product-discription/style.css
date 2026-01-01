@@ -1,0 +1,81 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+body{background:#fffdf7;color:#2c2b14}
+
+/* NAVBAR */
+.navbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 60px;background:#000
+}
+.navbar a{color:#e4c883;text-decoration:none;margin-left:25px}
+.brand-mark{color:#f5c542;font-size:2rem;font-weight:800}
+.brand-name{color:#fff;letter-spacing:3px}
+
+/* PRODUCT */
+.product-details{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  padding:80px;
+}
+
+/* IMAGES */
+.image-gallery .main-img{
+  width:100%;border-radius:20px;
+}
+.thumbs{
+  display:flex;gap:15px;margin-top:15px
+}
+.thumbs img{
+  width:80px;border-radius:10px;cursor:pointer;
+  border:2px solid transparent
+}
+.thumbs img:hover{border-color:#f5c542}
+
+/* DETAILS */
+.tag{letter-spacing:3px;font-size:0.8rem;color:#999}
+.details h1{font-size:2.5rem;margin:15px 0}
+.price{font-size:1.5rem;font-weight:600;color:#000}
+
+/* QTY */
+.quantity{display:flex;align-items:center;gap:15px;margin:20px 0}
+.quantity button{
+  width:40px;height:40px;border:none;
+  background:#f5c542;font-size:1.2rem;cursor:pointer
+}
+.quantity input{width:40px;text-align:center;border:none}
+
+/* BUTTONS */
+.actions{display:flex;gap:15px;margin:20px 0}
+.buy{
+  background:#f5c542;border:none;
+  padding:14px 40px;font-weight:600;cursor:pointer
+}
+.call{
+  background:#000;color:#fff;
+  padding:14px 30px;text-decoration:none
+}
+
+.desc{color:#555;line-height:1.7}
+
+/* REVIEWS */
+.reviews{
+  padding:60px 80px;background:#f9f6ec
+}
+.review{
+  background:#fff;padding:20px;
+  border-radius:15px;margin:15px 0
+}
+.add-review input,
+.add-review textarea{
+  width:100%;padding:10px;margin-top:10px
+}
+.add-review button{
+  margin-top:10px;background:#000;
+  color:#fff;padding:10px 20px;border:none
+}
+
+/* FOOTER */
+.footer{
+  background:#000;color:#aaa;
+  text-align:center;padding:30px
+}
